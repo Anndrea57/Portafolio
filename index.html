@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Metadatos -->
+    <meta charset="utf-8">
+    <meta name="author" content="Andrea Gómez Pineda">
+    <meta name="description" content="Portafolio de desarrollo web de Andrea Gómez Pineda">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Bootstrap">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Titulo -->
+    <title> Andrea Gómez Pineda|Desarrollo Front-End</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="imagenes/handshake.png">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- Iconos de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- CSS -->
+    <link href="style.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Rubik+Dirt&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Barra de navegacion -->
+    <nav class="navbar navbar-expand-md navbar-light">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"> </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-toggler">
+          <a class="navbar-brand" href="#">
+            <img class="logo" src="imagenes/profile.gif" width="50" alt="Logo de la página web">
+          </a>
+          <div>
+            <h1 class="letra-logo">AGP</h1>
+          </div>
+          <div>
+          <nav class="margen-nav fixed-top">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="60" height="23" viewBox="0 0 24 24" stroke-width="2.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                          <path d="M4 6l16 0" />
+                          <path d="M4 12l16 0" />
+                          <path d="M4 18l16 0" />
+                        </svg> Menú
+                      </a>
+                      <ul class="dropdown-menu dropdown-menu-dark">
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="#sobre-mi">SOBRE MÍ</a>
+                        </li>
+                        <li class="nav-item ">
+                          <a class="nav-link dropdown-item" href="#proyectos">PPROYECTOS</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link dropdown-item" href="#testimonios">TESTIMONIOS</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link dropdown-item" href="#contacto">CONTACTO</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Seccion Hero -->
+    <section class="hero align-items-stretch">
+      <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
+        <img class="hero-imagen-desarrollador rounded-circle" src="imagenes/Andrea.png" alt="Foto de Jane Doe">
+            <h1>¡HOLA! Soy Andrea Gómez Pineda</h1>
+        
+        <!--<h2>Desarrollo sitios web y escribo artículos sobre programación.</h2>-->
+        
+        <!--Animación con JavaScript-->
+        <h2 class="text-primary mb-4" id="typewriter"></h2>
+      </div>
+      
+    </section>
+
+    <!-- Sobre mi -->
+    <section id="sobre-mi" class="sobre-mi seccion-oscura1 division">
+      <div class="contenedor">
+        <h2 class="seccion-titulo">Conoce un poco de mi</h2>
+        <p class="seccion-texto">
+          Actualmente soy estudiante del 5to semestre de la Licenciatura en Actuaría, estoy interesada ampliamente por las ramas 
+          de matemáticas, economía y tecnología; considero que son herramientas escenciales para la vida actual, 
+          no sólo porque nos abren caminos en muchos ambitos, sino porque te permiten descubrir lo capaz que eres de 
+          crear y resolver.
+        </p>
+      </div>
+      <div class="hero-inferior">
+        <img class="hero-inferior-imagen img-fluid" src="imagenes/hero-inferior.svg" alt="Monitor, laptop y logos de HTML, CSS, JavaScript y React.">
+      </div>
+    </section>
+
+    <!-- Experiencia -->
+    <section class="experiencia seccion-clara1">
+      <div class="container text-center">
+        <div class="row">
+          <!-- Desarrollo Web -->
+          <div class="columna-background columna col-12 col-md-4">
+            <i class="bi"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-layout-dashboard" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#70e7d5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <path d="M4 4h6v8h-6z" />
+              <path d="M4 16h6v4h-6z" />
+              <path d="M14 12h6v8h-6z" />
+              <path d="M14 4h6v4h-6z" />
+            </svg></i>
+            <p class="experiencia-titulo">Desarrollo Web</p>
+            <p>
+              Mi relaciòn con la programación front-end de sitios web, comenzó en el 2021, con lenguajes de html y css, este conocimiento
+              fue reforzado por el curso impartido en Tecnolochicas durante el verano de 2023, donde además de ver los lenguajes previamente
+              mencionados se sumo a ellos bootstrap.
+            </p>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-primary">HTML</span>
+              <span class="badge text-bg-primary">CSS</span>
+              <span class="badge text-bg-primary">bootstrap</span>
+            </div>
+          </div>
+          <!-- Articulos -->
+          <div class="columna columna-background  col-12 col-md-4">
+            <i class="bi "><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-school" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#70e7d5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <path d="M22 9l-10 -4l-10 4l10 4l10 -4v6" />
+              <path d="M6 10.6v5.4a6 3 0 0 0 12 0v-5.4" />
+            </svg></i>
+            <p class="experiencia-titulo">Estudiante</p>
+            <p>
+              Actualmente estudio en la UAEMex el 5to semestre de la Licenciatura en Actuaría, he realizado cursos tecnológicos 
+              en la Fundación Carlos Slim, Udemy, Coursera y recientemente uno más en Tecnolochicas. 
+            </p>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-primary">UAEMex</span>
+              <span class="badge text-bg-primary">aprende.org</span>
+              <span class="badge text-bg-primary">Udemy</span>
+              <span class="badge text-bg-primary">Coursera</span>
+              <span class="badge text-bg-primary">Tecnolochicas PRO</span>
+
+            </div>
+          </div>
+          <!-- Estudiante -->
+          <div class="columna columna-background  col-12 col-md-4">
+            <i class="bi"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-vocabulary" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#70e7d5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <path d="M10 19h-6a1 1 0 0 1 -1 -1v-14a1 1 0 0 1 1 -1h6a2 2 0 0 1 2 2a2 2 0 0 1 2 -2h6a1 1 0 0 1 1 1v14a1 1 0 0 1 -1 1h-6a2 2 0 0 0 -2 2a2 2 0 0 0 -2 -2z" />
+              <path d="M12 5v16" />
+              <path d="M7 7h1" />
+              <path d="M7 11h1" />
+              <path d="M16 7h1" />
+              <path d="M16 11h1" />
+              <path d="M16 15h1" />
+            </svg></i>
+            <p class="experiencia-titulo">Actividades</p>
+            <p>
+              En el trayecto de mi vida personal he elaborado páginas personales y escolares; mejorado imágenes modificando
+              su forma, tamaño o aspecto; realizado bases de datos; elaborado e implementado algoritmos en ciertos programas;
+              asi mismo trabajar con excel es una de 
+              las actividades que se  suma a mi vida dentro del ambiente computacional y tecnológico.
+            </p>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-primary">Gimp</span>
+              <span class="badge text-bg-primary">Excel</span>
+              <span class="badge text-bg-primary">Pseint</span>
+              <span class="badge text-bg-primary">C++</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section class="seccion-clara">
+    <section id="proyectos" class="proyectos-recientes  d-flex flex-column seccion-clara2">
+      <h2 class="seccion-titulo ">Mis proyectos recientes</h2>
+      <h3 class="seccion-descripcion">Estos son algunos proyectos que he creado recientemente...</h3>
+      <!--navegación proyectos-->
+      <div class="row">
+        <div class=" col dropdown">
+          <button class="btn btn-secondary dropdown-toggle color-textoproyecto" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            FREELANCER
+          </button>
+          <ul class="dropdown-menu border-proyectos">
+            <li ><button class="texto-descriptivo">
+              
+              Página básica
+              con formato responsivo para todo  tipo de dispositivos.
+              Los links que aquí se muestran no te direccionan a ninguna parte aún.
+              
+            </button></li>
+          </ul>
+        </div>
+        <div class=" col dropdown">
+          <button class="btn btn-secondary dropdown-toggle color-textoproyecto" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            DANDRE
+          </button>
+          <ul class="dropdown-menu">
+            <li><button class="texto-descriptivo ">En este proyecto se muestra el contenido de una empresa dedicada a las ventas,
+              dicha página aún no tiene formato responsivo para todos los aparatos.
+            </button></li>
+          </ul>
+        </div>
+        <div class=" col dropdown">
+          <button class="btn btn-secondary dropdown-toggle color-textoproyecto" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Clon-google
+          </button>
+          <ul class="dropdown-menu">
+            <li><button class="texto-descriptivo">En esta página podemos ver que se clona la página google. Aun no tiene formato responsivo
+            </button></li>
+          </ul>
+        </div>
+        <div class=" col dropdown">
+          <button class="btn btn-secondary dropdown-toggle color-textoproyecto" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Mujeres
+          </button>
+          <ul class="dropdown-menu">
+            <li><button class="texto-descriptivo">Este proyecto se utilizó para fines prácticos, cada boton te lleva a alguna parte.
+              Aún no tiene uso responsivo.
+            </button></li>
+          </ul>
+        </div>
+        <div class=" col dropdown">
+          <button class="btn btn-secondary dropdown-toggle color-textoproyecto" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Portafolio
+          </button>
+          <ul class="dropdown-menu">
+            <li><button class="texto-descriptivo">
+              Proyecto modificado con css y bootstrap. Ya cuenta con formato responsivo.
+            </button></li>
+          </ul>
+        </div>
+      </div>
+      <!-- Galeria de Proyectos -->
+      <div class="container text-center proyectos-contenedor">
+        <div class="row">
+          <!-- Proyecto 1 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="imagenes/Freelancer.png" alt="Proyecto freelancer">
+              <div class="overlay">
+                <p>Freelancer</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/Anndrea57/Pagina-freelancer.git" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="https://anddrea-ggomez-77777.netlify.app/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi "><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-pointer-search" width="50" height="50" viewBox="0 0 24 24" stroke-width="2.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                      <path d="M14.778 12.222l3.113 -2.09a1.2 1.2 0 0 0 -.309 -2.228l-13.582 -3.904l3.904 13.563a1.2 1.2 0 0 0 2.228 .308l2.09 -3.093" />
+                      <path d="M18 18m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                      <path d="M20.2 20.2l1.8 1.8" />
+                    </svg></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 2 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="imagenes/DANDRE.png" alt="Proyecto página DANDRE">
+              <div class="overlay">
+                <p>DANDRE</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/Anndrea57/Pagina-Dandre.git" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="https://dandre-cobertores-1c9cf9.netlify.app/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-pointer-search" width="50" height="50" viewBox="0 0 24 24" stroke-width="2.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                      <path d="M14.778 12.222l3.113 -2.09a1.2 1.2 0 0 0 -.309 -2.228l-13.582 -3.904l3.904 13.563a1.2 1.2 0 0 0 2.228 .308l2.09 -3.093" />
+                      <path d="M18 18m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                      <path d="M20.2 20.2l1.8 1.8" />
+                    </svg></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 3 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="imagenes/Clone-google.png" alt="Proyecto clon google">
+              <div class="overlay">
+                <p>Clon-google</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/Anndrea57/Google-cone.git" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="https://gleeful-cobbler-dee2fa.netlify.app/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-pointer-search" width="50" height="50" viewBox="0 0 24 24" stroke-width="2.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                      <path d="M14.778 12.222l3.113 -2.09a1.2 1.2 0 0 0 -.309 -2.228l-13.582 -3.904l3.904 13.563a1.2 1.2 0 0 0 2.228 .308l2.09 -3.093" />
+                      <path d="M18 18m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                      <path d="M20.2 20.2l1.8 1.8" />
+                    </svg></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 4 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="imagenes/Mujeres.png" alt="Proyecto mujeres">
+              <div class="overlay">
+                <p>Mujeres</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/Anndrea57/mujeres-pagina.git" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="https://flourishing-capybara-010d5c.netlify.app/index.html" target="_blank" rel="noopener noreferrer">
+                    <i class="bi"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-pointer-search" width="50" height="50" viewBox="0 0 24 24" stroke-width="2.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                      <path d="M14.778 12.222l3.113 -2.09a1.2 1.2 0 0 0 -.309 -2.228l-13.582 -3.904l3.904 13.563a1.2 1.2 0 0 0 2.228 .308l2.09 -3.093" />
+                      <path d="M18 18m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                      <path d="M20.2 20.2l1.8 1.8" />
+                    </svg></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 5 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="imagenes/Portafolio.png" alt="Proyecto portafolio">
+              <div class="overlay">
+                <p>Portafolio</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/Anndrea57/Portafolio.git" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="index.html" target="_blank" rel="noopener noreferrer">
+                    <i class="bi"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-pointer-search" width="50" height="50" viewBox="0 0 24 24" stroke-width="2.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                      <path d="M14.778 12.222l3.113 -2.09a1.2 1.2 0 0 0 -.309 -2.228l-13.582 -3.904l3.904 13.563a1.2 1.2 0 0 0 2.228 .308l2.09 -3.093" />
+                      <path d="M18 18m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                      <path d="M20.2 20.2l1.8 1.8" />
+                    </svg></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+
+    <!-- Testimonios -->
+    <section id="testimonios" class="testimonios ">
+      <h2 class="seccion-titulo texto-negro">Testimonios</h2>
+      <h3 class="seccion-descripcion texto">Estos son algunos testimonios sobre mi trabajo</h3>
+      
+      <!-- Carrusel -->
+      <div id="testimonios-carrusel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container">
+              <img class="testimonio-imagen rounded-circle" src="imagenes/Miranda.JPG" alt="Foto de Gino">
+              <p class="testimonio-texto">
+                Andrea Gómez ha demostrado ser una excelente estudiante!. Durante el desarrollo de proyectos, ha mostrado
+                 un sólido dominio de tecnologías front-end como HTML, CSS y bootstrap, logrando crear interfaces de
+                  usuario atractivas y funcionales.
+                </p>
+              <div class="testimonio-info">
+                <p class="cliente">Miranda Jaramillo</p>
+                <p class="cargo">Mentora de Tecnolochicas PRO</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <img class="testimonio-imagen rounded-circle" src="imagenes/Adrian.jpg" alt="Foto de Nora">
+              <p class="testimonio-texto">
+                Excelente presentación y accesibilidad al contenido que se presenta, se logra apreciar toda la información
+                de una manera clara y sin complicaciones
+                </p>
+              <div class="testimonio-info">
+                <p class="cliente">Adrian Jaimes</p>
+                <p class="cargo">Miembro de la UAEMex</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <img class="testimonio-imagen rounded-circle" src="imagenes/Luis.jpg" alt="Foto de Leonardo">
+              <p class="testimonio-texto">
+                Andrea Gómez es una diseñadora web muy eficiente e innovadora, sus diseños son coloridos y los formatos
+                representan la originalidad y el trabajo bien realizado.</p>
+              <div class="testimonio-info">
+                <p class="cliente">Luis García</p>
+                <p class="cargo">Aprendiz en Actuaría</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    </section>
+    </section>
+  
+    <!-- Contacto -->
+    <section id="contacto" class="contacto seccion-oscura">
+      <div class="container">
+        <div class="container text-center rectangulo d-flex justify-content-evenly">
+          <div class="row">
+            <div class="col-12 col-md-4 seccion-titulo1">
+              ¡CONTÁCTAME!
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-heart-handshake" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#09161f" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+                <path d="M12 6l-3.293 3.293a1 1 0 0 0 0 1.414l.543 .543c.69 .69 1.81 .69 2.5 0l1 -1a3.182 3.182 0 0 1 4.5 0l2.25 2.25" />
+                <path d="M12.5 15.5l2 2" />
+                <path d="M15 13l2 2" />
+              </svg>
+            </div>
+            <div class="col-12 col-md-4 descripcion">
+              Iniciemos un proyecto, diseñemos lo inimaginable y creemos grandeza.
+            </div>
+            <div class="col-12 col-md-4">
+              <a href="anddrea.ggomez@gmail.com">
+                <button type="button">  
+                  Contacto
+                  <i class="bi bi-envelope-check-fill"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Pie de pagina (footer) -->
+    <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center"> 
+      <a class="footer-logo" href="#">
+        <img class="logo-footer" src="imagenes/profile.gif" width="50" alt="Logo de la página web">
+      </a>
+      <p class="footer-texto text-center">Crear es un trabajo de todos los días.<br>Quien no esta creando no esta creciendo.</p>
+      <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+        <a href="https://twitter.com/Andregomezpi" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-twitter"></i>
+        </a>
+        <a href="https://github.com/Anndrea57" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/andrea-g%C3%B3mez-pineda-569618285/" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-linkedin"></i>
+        </a>
+        <a href="https://www.instagram.com/andy.gomez077/" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a href="anndrea.ggomez@gmail.com" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-envelope"></i>
+        </a>
+      </div>
+      <div class="derechos-de-autor">Creado por Andrea Gómez Pineda (2023) &#169;</div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+        <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+        <script src="main.js"></script>
+
+  </body>
+</html>
