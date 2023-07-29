@@ -247,7 +247,7 @@ h1 {
 
 .proyectos-contenedor {
   padding-top: 60px;
-  margin-bottom: 40px;
+  margin: 40px;
 }
 
 .overlay {
@@ -273,7 +273,7 @@ h1 {
 }
 
 .proyecto img{
-  width: 400px;
+  width: 380px;
   height: 260px;
 }
 
